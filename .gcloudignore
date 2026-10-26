@@ -1,0 +1,7 @@
+node_modules
+mobile
+docs
+test
+.git
+.github
+*.md

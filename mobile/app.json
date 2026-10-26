@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "SA Sight",
+    "slug": "sa-sight",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kopanya.sasight"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "package": "com.kopanya.sasight"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "SA Sight uses only a rough 5 km area to route your report. Exact coordinates are never stored or sent."
+        }
+      ],
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": "Protect your saved receipt."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose photos to attach to your report. They are shrunk and encrypted on your phone."
+        }
+      ]
+    ]
+  }
+}
